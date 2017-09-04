@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bank.project.banking">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true"
+            android:label="@string/full_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        // menu
+        <activity
+            android:name=".admin.AdminMenuActivity"
+            android:label="@string/admin_menu" />
+        <activity
+            android:name=".teller.TellerMenuActivity"
+            android:label="@string/teller_menu" />
+        <activity
+            android:name=".atm.AtmMenuActivity"
+            android:label="@string/atm_menu" />
+        // inside admin menu
+        <activity
+            android:name=".admin.NewAdminInfoActivity"
+            android:label="@string/new_admin" />
+        <activity
+            android:name=".admin.NewTellerActivity"
+            android:label="@string/new_teller" />
+        <activity
+            android:name=".admin.AdminListActivity"
+            android:label="@string/admin_list" />
+        <activity
+            android:name=".admin.TellerListActivity"
+            android:label="@string/teller_list" />
+        <activity
+            android:name=".admin.CustomerListActivity"
+            android:label="@string/customer_list" />
+        <activity
+            android:name=".admin.AdminMainMessageActivity"
+            android:label="@string/admin_message" />
+        <activity
+            android:name=".admin.AdminViewTotalBalanceActivity"
+            android:label="@string/admin_view_total_bal" />
+        <activity
+            android:name=".admin.AdminBankTotalMoneyActivity"
+            android:label="@string/admin_view_total_money" />
+        <activity
+            android:name=".admin.AdminPromoteActivity"
+            android:label="@string/promote" />
+        <activity
+            android:name=".admin.AdminMessageActivity"
+            android:label="@string/view_own_msg" />
+        <activity
+            android:name=".admin.AdminAnyMessageActivity"
+            android:label="@string/view_any_msg" />
+        <activity
+            android:name=".admin.AdminLeaveMessageActivity"
+            android:label="@string/leave_msg" />
+        <activity
+            android:name=".admin.AdminViewMessageActivity"
+            android:label="@string/view_message" />
+        // inside teller menu
+        <activity
+            android:name=".teller.TellerAuthCustomerActivity"
+            android:label="@string/teller_auth_cus" />
+        <activity
+            android:name=".teller.TellerMakeUserActivity"
+            android:label="@string/teller_make_cus" />
+        <activity
+            android:name=".teller.TellerMakeAccountActivity"
+            android:label="@string/teller_make_account" />
+        <activity
+            android:name=".teller.TellerGiveInterestActivity"
+            android:label="@string/teller_give_interest" />
+        <activity
+            android:name=".teller.TellerDepositActivity"
+            android:label="@string/teller_make_deposit" />
+        <activity
+            android:name=".teller.TellerWithdrawActivity"
+            android:label="@string/teller_make_withdrawal" />
+        <activity
+            android:name=".teller.TellerCheckBalanceActivity"
+            android:label="@string/teller_check_balance" />
+        <activity
+            android:name=".teller.TellerListAccountsActivity"
+            android:label="@string/account_list" />
+        <activity
+            android:name=".teller.TellerViewTotalBalanceActivity"
+            android:label="@string/teller_total_bal" />
+        <activity
+            android:name=".teller.TellerUpdateCustomerInfoActivity"
+            android:label="@string/teller_update_info" />
+        <activity
+            android:name=".teller.TellerMainMessageActivity"
+            android:label="@string/teller_message" />
+        <activity
+            android:name=".teller.TellerLeaveMessageActivity"
+            android:label="@string/leave_msg" />
+        <activity
+            android:name=".teller.TellerViewCustomerMessageActivity"
+            android:label="@string/view_your_cus_msg" />
+        <activity
+            android:name=".teller.TellerViewItsMessagesActivity"
+            android:label="@string/view_own_msg" />
+        <activity
+            android:name=".teller.TellerViewMessageActivity"
+            android:label="@string/view_message" />
+        // inside atm menu
+        <activity
+            android:name=".atm.AtmListAccountsActivity"
+            android:label="@string/atm_account_list" />
+        <activity
+            android:name=".atm.AtmDepositActivity"
+            android:label="@string/atm_deposit" />
+        <activity
+            android:name=".atm.AtmWithdrawActivity"
+            android:label="@string/atm_withdraw" />
+        <activity
+            android:name=".atm.AtmCheckBalanceActivity"
+            android:label="@string/check_bal_label" />
+        <activity
+            android:name=".atm.AtmMainMessageActivity"
+            android:label="@string/atm_message" />
+        <activity
+            android:name=".atm.AtmViewMessageActivity"
+            android:label="@string/view_message" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:label="@string/forget_password"/>
+    </application>
+
+</manifest>
